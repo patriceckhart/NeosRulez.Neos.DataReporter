@@ -55,7 +55,7 @@ class IFrameHelper implements ProtectedContextAwareInterface
             $originalIFrame = $dom->saveHTML($a->item($i));
             $result[] = [
                 'stringToBeReplaced' => html_entity_decode($originalIFrame),
-                'stringToReplace' => '<div class="' . $divCssClassName . '" data-youtube-url="' . $src . '" data-width="' . $width . '" data-height="' . $height . '" style="' . $style . '"></div>'
+                'stringToReplace' => '<div class="' . $divCssClassName . '" data-iframe-url="' . $src . '" data-width="' . $width . '" data-height="' . $height . '" style="' . $style . '"></div>'
             ];
         }
         return $result;
