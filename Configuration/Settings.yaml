@@ -1,0 +1,8 @@
+Neos:
+  Fusion:
+    defaultContext:
+      DataReporter.iFrame: 'NeosRulez\Neos\DataReporter\EelHelper\IFrameHelper'
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.Neos.DataReporter: true
