@@ -44,6 +44,7 @@ class IFrameHelper implements ProtectedContextAwareInterface
     {
         $dom = new \DOMDocument();
         $html = $string;
+        libxml_use_internal_errors(true);
         @$dom->loadHTML($html);
         $a = $dom->getElementsByTagName('iframe');
         $result = [];
